@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ecommerce Website</title>
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing:border-box;
+        }
+       
+        .navbar{
+            display: flex;
+            align-items: center;
+            padding:20px;
+
+        }
+        nav{
+            flex:1;
+            text-align:right;
+        }
+        nav ul{
+            display:inline-block;
+            list-style-type: none;
+        }
+        nav ul li{
+            display:inline-block;
+            margin-right:20px;
+
+        }
+        a{
+            text-decoration: none;
+            color: #555;
+        }
+        p{
+            color:#555;
+        }
+        .container{
+            max-width: 1300px;
+            margin:auto;
+            padding-left: 25px;
+            padding-right:25px;
+2
+        }
+        .row{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    
+        .col-2{
+            flex-basis: 50%;
+            min-width: 300px;
+           
+        }
+        .col-2 img{
+            width:600px;
+            height:600px;
+            padding:70px 0;
+        }
+        .col-2 h1{
+            font-size: 50px;
+            line-height: 60px;
+            margin:25px;
+        }
+        .btn{
+            display: inline-block;
+            background:red;
+            color:whitesmoke;
+            padding: 8px 30px;
+            margin: 30px 0;
+            border-radius:30px;
+            transition: background 0.5
+
+        }
+        .btn:hover{
+            background: #563434;
+        }
+        .header{
+            background:radial-gradient(whitesmoke,#ffd6d6);
+           
+        }
+        .header .row{
+            margin-top: 70px;
+        }
+        .categories{
+            margin: 70px 0;
+        }
+        .categories{
+            margin: 70px 0;
+        }
+        .col-3{
+            flex-basis:30px;
+            min-width:250px;
+            margin-bottom: 30px;
+        }
+        .col-3 img{
+            width:150%;
+        }
+        .smaller-container{
+            max-width:1080px;
+            margin:auto;
+
+        }
+        .col-4{
+            flex-basis:25%;
+            padding:10px;
+            min-width:200px;
+            margin-bottom: 50px;
+            transition: transform 0.5s;
+        }
+        .col-4 img{
+            width:100%;
+
+        }
+        .title{
+            text-align:center ;
+            margin:0 auto 80px;
+            position:relative;
+            line-height: 60px;
+            color:#555
+
+        }
+        h4{
+            color:#555;
+            font-weight: normal;
+        }
+        .col-4 p{
+            font-size: 14px;
+
+        }
+        .rating{
+            color:gold;
+            
+        }
+        .col-4:hover{
+            transform: translateY(-5px);
+        }
+        .offer{
+            background: radial-gradient(#fff,pink);
+            margin-top:80px ;
+            padding: 30px 0;
+        }
+        .col-2 .offer-img{
+            padding: 50px;
+        }
+        p{
+            color:#555;
+        }
+        <!-----footer-->
+        .footer{
+            background-color:#333333;
+            color:#8a8a8a;
+            font-size:14px;
+            width:200%;
+
+        }
+        .container{
+            background:none;
+        }
+        .footer p{
+            color: black;
+
+        }
+        .footer h3{
+            color: black;
+            margin-bottom: 20px;
+
+        }
+        .footer-col-1, .footer-c0l-2, .footer-col-3, .footer-col-4{
+            min-width: 300px;
+            margin-bottom: 20px;
+        }
+        .footer-col-1{
+            flex-basis:30%;
+        }
+         .footer-col-2{
+            flex:1;
+            text-align: center;
+        }
+         .footer-col-1{
+            flex-basis:30%;
+        }
+        .footer-col-3, .footer-col-4{
+            flex-basis:12%;
+            text-align: center;
+        }
+        ul{
+            list-style-type: none;
+        }
+        .footer-col-3 li{
+             color: black;
+
+        }
+         .footer-col-4 li{
+             color: black;
+
+        }
+        
+    </style>
+   
+</head>
+<body>
+    <div class="header">
+    <div class="container">
+    <div class="navbar"> 
+        <div class="logo"> GLOW BEAUTY</div>
+        <nav>
+            <ul> 
+                <li><a href="">Home</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Account</a></li>
+            </ul> 
+        </nav>
+    </div>
+    <div class="row">
+        <div class="col-2">
+            <h1>Worlds Best Beauty<br>Products</h1>
+            <p>Cosmetics enhance beauty<br>But confidence makes it glow</p>
+            <a href="" class="btn">Explore Now &#8594;</a>
+        </div>
+        <div class="col-2">
+            <img src="cos1.jpg">
+        </div>
+    </div>
+    </div>
+    </div>
+    <!--------featured category-------->
+    <div class="categories">
+    <div class="smaller-container">
+        <div class="row">
+             <div class="col-3">
+            <img src="cos2.jpg">
+        </div>
+        <div class="col-3">
+            <img src="cos3.jpeg">
+        </div>
+        <div class="col-3">
+            <img src="renee-fab-3-in-1-eyeshadow-4-5gm-renee-cosmetics-1.jpg">
+            </div>
+        </div>
+        </div>
+    </div> 
+    </div>
+
+
+    <!------featured products-->
+    <div class="small-container">
+        <h2 class="title">Featured Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="sun.jpg">
+                <h4>Sunscreen</h4>
+                <div class="rating">
+                    &#9733; &#9733; &#9733; &#9733; &#9734;
+                </div> 
+                <p>350.00</p>
+            </div>
+            <div class="col-4">
+                <img src="lip1.jpeg">
+                <h4>Lip Balm</h4>
+                <div class="rating">
+                    &#9733; &#9733; &#9733; &#9733; &#9733;
+                </div> 
+                <p>690.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images.jpeg">
+                <h4>Compact Powder</h4>
+                <div class="rating">
+                    &#9733; &#9733; &#9733; &#9734; &#9734;
+                </div> 
+                <p>570.00</p>
+            </div>
+            <div class="col-4">
+                <img src="lipstick2.jpg">
+                <h4>LipStick</h4>
+                <div class="rating">
+                    &#9733; &#9733; &#9733; &#9733; &#9734;
+                </div> 
+                <p>890.00</p>
+            </div>
+        </div>
+       
+        <h2 class="title">Latest Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="lip2.jpeg">
+                <h4>Lip Liner</h4>
+                <div class="rating">
+                    &#9733; &#9733; &#9733; &#9733; &#9734;
+                </div> 
+                <p>400.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images10.jpeg">
+                <h4>Blush</h4>
+                <div class="rating">
+                    &#9733; &#9733; &#9733; &#9733; &#9733;
+                </div> 
+                <p>890.00</p>
+            </div>
+            <div class="col-4">
+                <img src="mascara.jpeg">
+                <h4>Mascara</h4>
+                <div class="rating">
+                    &#9733; &#9733; &#9733; &#9734; &#9734;
+                </div> 
+                <p>900.00</p>
+            </div>
+            <div class="col-4">
+                <img src="pvar.jpg">
+                <h4>Perfume</h4>
+                <div class="rating">
+                    &#9733; &#9733; &#9733; &#9733; &#9734;
+                </div> 
+                <p>590.00</p>
+            </div>
+            
+
+    </div>
+    <!-----offer-->
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+            <div class="col-2">
+                <img src="lakvar.jpg" class="offer-img">
+            </div>
+            <div class="col-2">
+                <p>Exclusively Available on Glow Beauty</p>
+                <h1>LAKME</h1>
+                <p>Lakmé products nourish and protect your skin, offering hydration, sun protection.<br>
+                 It help maintain glowing skin while addressing specific needs like dryness and sensitivity.</p>
+                 <a href="" class="btn">Buy Now &#8594;</a>
+
+        </div>
+            </div>
+        </div>
+    </div>
+
+       <!-------footer---->
+       <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download our App</h3>
+                    <p>Download app for ios and android mobile.</p>
+                </div>
+                <div class="footer-col-2">
+                    <h3>Glow Beauty</h3>
+                <p>Lakmé products nourish, protect, and enhance your skin’s 
+                    natural glow with gentle care and effective solutions.</p>
+            </div>
+             <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Insta</li>
+                    <li>Youtube</li>
+                </ul>
+                
+            </div>
+            </div>
+
+        </div>
+       </div>
+    
+</body>
+</html>
